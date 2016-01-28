@@ -1,0 +1,8 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <ellipse id="svg_2" cy="165" cx="136" stroke-width="5" stroke="#000000" fill="#FF0000"/>
+  <ellipse transform="rotate(-14.931417465209961 321.8921203613282,223.09544372558605) " ry="82" rx="274.10603" id="svg_3" cy="223.09543" cx="321.89213" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" stroke="#000000" fill="none"/>
+ </g>
+</svg>

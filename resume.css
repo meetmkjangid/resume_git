@@ -1,0 +1,717 @@
+body {
+	background-color:black;
+	font-family:'Merienda One','Serif','Times New Roman';
+	overflow: hidden;
+	/*overflow: hidden;*/
+}
+a{
+	color: inherit; /* blue colors for links too */
+	text-decoration: none;
+}
+
+#work_in_progress_pic{
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+	width:100px;
+}
+
+blockquote {
+  display:inline-block;
+  /*width:500px;
+  background: #E5E5E5;
+  /*border-left: 10px solid #ccc;*/
+  margin: auto 10px; /*10px 10px;*/
+  padding: 40px	 20px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.qod-text, #edit-text{
+    font-size: 20px;
+    line-height: 1.3em;
+	text-align:justify;
+    /*margin-bottom: 40px;*/
+}
+#qod-quote{
+	display:None;
+}
+
+#myquote{
+	vertical-align:middle;
+}
+
+.qod-author, #edit-author{
+	font-size: 18px;
+    text-transform: uppercase;
+    color: #16B6DF !important;
+    font-weight: bold;
+}
+
+#edit-author{
+	position:relative;
+	margin-top:20px !important;
+}
+
+#nav{
+	display: none;
+	color: #16B6DF !important;
+	list-style-type:none;
+	width:180px;
+	margin-left:100px;
+	margin-top:100px;
+}
+
+.navmenubtn{
+	padding:10px 10px;
+	font-size:16px;
+	font-family:'Merienda One','Serif','Times New Roman';
+	background-color:white;
+	width:180px;
+	display:inline-block;
+	margin:10px 10px;
+	border-radius:5px;
+	border:none;
+}
+
+.navmenubtn:hover{
+	background-color:#E5E5E5;
+	cursor:pointer;
+}
+
+#hzline1_skill{
+	/*display:inline-block;
+	width:470px;
+	height:10px; */
+    /*vertical-align: top; */
+}
+
+.hzline{
+	display:block;
+	/*margin-top:5px;*/
+	width:480px;
+	height:10px;
+	stroke-dasharray: 480; 
+	stroke-dashoffset: 480;
+  /*animation-name: dash;
+  animation-duration:3s;
+  animation-delay:1s;
+  animation-timing-function:ease-in-out;
+  animation-direction:normal;
+  animation-iteration-count:1;*/
+}
+
+#hzline2_skill{
+	/*display:inline-block; */
+	/*margin-top:460px;
+	/*width:470px;
+	height:10px;
+	/*margin-top:100px;*/
+    /*vertical-align: bottom;*/
+}
+
+blockquote:before {
+    /*left: -200px;*/
+    content: '\201c';
+}
+blockquote:after{
+    /*left: -200px;*/
+	margin-top:10px;
+	/*float:right;*/
+	margin-left:400px;
+    content: '\201d';
+}
+blockquote:before,blockquote:after {
+    /*position: absolute;
+    top: 10px;*/
+    font-size: 50px;
+    color: #16B6DF;
+    font-family: Arial;
+    font-weight: bold;
+	display:block;
+    /*line-height: 300px;*/
+}
+
+#image-cont{
+	display:None;
+	height:450px; /*450px;*/
+	width:361px;  /*361*/
+	background-image: url('http://s18.postimg.org/imrbpeo4p/image.jpg');
+	background-size: 100% 100%;
+	border-radius:0%;
+	-moz-box-shadow:inset 0px 0px 30px 50px white;
+    -webkit-box-shadow:inset 0px 0px 30px 50px white;
+    box-shadow:inset 0px 0px 60px 40px white;
+	margin: 20px 60px 20px 60px;
+}
+
+.rubik{
+	width:500px;
+	position:absolute;
+	z-index:50;
+	/*display:None;*/
+}
+
+#svgcirc{
+	position:absolute;
+	margin-top:-33px;
+	margin-left:40px;
+	/*display:none;*/
+}
+
+.cursor{
+	display:None;
+	height:20px;
+	width:10px;
+}
+
+.svgcurs{
+	width:15px;
+	height:23px;
+	margin-bottom:-4px;
+}
+#cont1-header{
+	/*display:inline-block;*/
+	clear:both;
+	position:relative;
+	background-color:white;
+	padding:10px 10px 10px 10px;
+	margin-left:50px;
+	margin-top:20px;
+	display:None;
+}
+
+.container {
+  /*float:right;*/
+  /*display:block;*/
+  left:50%;
+  margin-left:-250px;
+  margin-top:40px;
+  /*margin-left:auto;
+  /*margin-top:-450px;
+  /*margin-right:auto;*/
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  perspective: 800px;
+  
+}
+
+#cube {
+  position: absolute;
+  margin: auto auto; 
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 2s ease;
+  transform-style: preserve-3d;
+  transition: all 2s ease;
+}
+
+.face {
+  position: absolute;
+  height: 498px;
+  width: 498px;
+  /*margin:20px;*/
+  display:block;
+  /*padding: 20px;
+  background-color: white;*/
+  border: 1px solid black;
+  background-color: white;
+
+}
+
+#cube .top {
+  -webkit-transform: rotateX(90deg) translateZ(250px);
+  transform: rotateX(90deg) translateZ(250px);
+}
+
+#cube .front {
+  -webkit-transform: translateZ(250px);
+  transform: translateZ(250px);
+}
+
+#cube .right {
+  -webkit-transform: rotateY(90deg) translateZ(250px);
+  transform: rotateY(90deg) translateZ(250px);
+}
+
+#cube .back {
+  -webkit-transform: rotateY(180deg)translateZ(250px); 
+  transform: rotateY(180deg)translateZ(250px);   /*y*/
+}
+
+#cube .left {
+  -webkit-transform: rotateY(-90deg) translateZ(250px);
+  transform: rotateY(-90deg) translateZ(250px);
+}
+
+#cube .down {
+  -webkit-transform: rotateX(-90deg) translateZ(250px);
+  transform: rotateX(-90deg) translateZ(250px);
+}
+
+#cube {-webkit-transform:translateZ(-250px); 
+ transform: translateZ(-250px ); }
+ 
+
+
+#textbox_skill_wrapper{
+	width:480px;
+	height:480px;
+	/*background: #E5E5E5;*/
+	margin:10px 10px 10px 10px;
+	line-height: 1.3em;
+	/*text-align:justify;
+	font-size:20px;
+	/*padding: 40px 20px;
+	/*height:500px;
+	margin-top:40%;
+	margin-bottom:50%;
+	position:absolute;*/
+    /*top:50%;
+    left:50%;
+    margin-left:-250px; /* width / -2 */
+    /*margin-top:-250px;*/
+	display:table;
+	/*vertical-align:middle;*/
+}
+
+
+#textbox_skill{
+	margin:auto auto;
+	width:479px;
+	height:460px;
+	font-size:20px;
+}
+
+#table_skill{
+	/*margin: 20px auto 20px 37px;*/
+	padding-top:60px;
+	margin-left:37px;
+	/*margin-top:40px; auto;*/
+	display:block;
+}
+
+#skill_rating_label{
+	font-size:8px;
+	position:absolute;
+	margin-left:242px;
+	margin-top:30px;
+}
+
+@-moz-keyframes onlod {
+    0% {
+        -moz-transform: ;
+    }
+	25%{
+		-moz-transform: translateZ(-250px )rotateY(-30deg);
+	}
+	50% {
+        -webkit-transform: translateZ(-250px )rotateY(30deg);
+    }
+    100% {
+        -moz-transform: translateZ(-250px )rotateY(0deg);
+    }
+}
+@-webkit-keyframes onlod {
+    0% {
+        -webkit-transform: ;
+    }
+	25%{
+		-webkit-transform: translateZ(-250px )rotateY(-30deg);
+	}
+    50% {
+        -webkit-transform: translateZ(-250px )rotateY(30deg);
+    }
+	100% {
+        -webkit-transform: translateZ(-250px )rotateY(0deg);
+    }
+}
+@keyframes onlod {
+    0% {
+        transform: ;
+    }
+	25%{
+		transform: translateZ(-250px)rotateY(-30deg);
+	}
+	50%{
+		transform: translateZ(-250px )rotateY(30deg);
+	}
+	100%{
+		transform: translateZ(-250px )rotateY(0deg);
+}
+}
+
+#path1 {
+	stroke-dasharray: 754; 
+	stroke-dashoffset: 754;
+  /*animation-name: dash;
+  animation-duration:3s;
+  animation-delay:1s;
+  animation-timing-function:ease-in-out;
+  animation-direction:normal;
+  animation-iteration-count:1;*/
+}
+
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 754;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes hzline_animate{
+  from {
+    stroke-dashoffset: 480;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#text1{
+	width: 400px;
+	margin:auto auto;
+	margin-top:40px;
+	text-align: center;
+	/*margin-left:180px;*/
+}
+#work_exp_container{
+	/*margin:auto;
+	/*top:50%;
+	margin-top:-113px; */
+	/*display: inline-block;
+	/*vertical-align:middle;
+	text-align: center;*/
+	font-family:'Serif';
+	position:absolute;
+    top: 50%;
+	left:50%;
+    margin-top: -150px;
+    margin-left: -220px;
+	width:440px;
+	height:300px; 
+}
+
+#work_exp1{
+	padding:5px 5px 5px 10px;
+	/*background-color: #E3898C;*/
+	/*border:2px solid black;
+	/*margin-left:40px; */
+	width:425px;
+	height:57px;
+	 box-shadow: 0px 3px 10px;
+	/*margin-top:20px;*/
+}
+
+#work_exp2{
+	padding:5px 5px 5px 10px;
+	box-shadow: 0px 3px 10px;/*background-color: #BFDCED; */
+	/*border:2px solid black;
+	/*margin-left:40px; */
+	width:425px;
+	height:57px;
+	margin-top:15px;
+}
+
+#work_exp3{
+	padding:5px 5px 5px 10px;
+	box-shadow: 0px 3px 10px;
+	/*border:2px solid black;
+	/*background-color: #DECAB0; */
+	/*margin-left:40px; */
+	width:425px;
+	height:57px;
+	margin-top:15px;
+}
+
+#icici_logo{
+	display:inline-block;
+	float:right;
+	width: 60px;
+    margin-top: -40px;
+    height: 60px;
+	/*border-radius:30%;  */
+	background: url("/images/icici-bank-logo.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+#sunswitch_logo{
+	display:inline-block;
+	float:right;
+	width: 90px;
+    margin-top: -46px;
+    height: 27px;
+	/*border-radius:5%;    */
+	background: url("/images/sunswitch.png");
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	
+}
+
+#work_exp_title{
+}
+
+#email_me1{
+	background-color: #A9D0E7;
+}
+
+#education_container{
+	font-family:'Serif';
+}
+
+#education_heading{
+	margin-left:20px;
+}
+#education_graduate_school_logo{
+	width:100px;
+	height:100px;
+	background: url('https://upload.wikimedia.org/wikipedia/en/6/66/IIT_Delhi_logo.gif');
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+#education_graduate_school_gpa{
+	/*display:None; */
+	/*display: None;*/
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px;
+    width: 240px;
+    height: 40px;
+    padding: 30px 10px 50px 50px;
+    font-weight:bold;
+} 
+
+#education_graduate_school_name{
+	margin-left:110px;
+	margin-top:-90px;
+	
+}
+#education_graduate_school_name_cont{
+	/*display:none; */
+	position:absolute;
+    margin-left: 100px;
+    margin-top:10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px;
+    width: 280px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+}
+
+#education_graduate_school_course1{
+	position:absolute;
+	margin-left: 100px;
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px;
+    width: 260px;
+    height: 80px;
+    padding: 30px 10px 10px 30px;
+    font-weight:bold;
+}
+
+#education_graduate_school_course2{
+	position: absolute;
+    margin-top: 10px;
+	margin-left: 100px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px;
+    width: 240px;
+    height: 80px;
+    padding: 30px 10px 10px 50px;
+    font-weight:bold;
+}
+
+#education_graduate_school_course3{
+	position: absolute;
+    margin-top: 10px;
+	margin-left: 100px;
+    /* border: 2px solid black; */
+    box-shadow: 2px 2px 5px;
+    width: 260px;
+    height: 80px;
+    padding: 30px 10px 10px 30px;
+    font-weight:bold;
+}
+
+
+#education_graduate_school_image_slider_circle {
+	position: absolute;
+	margin-left: 210px;
+	margin-top: 170px;
+}
+
+#education_senior_school_label{
+    width: 60px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 40px 0px 20px 40px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+    opacity:1;
+    z-index:200;
+}
+
+#education_senior_school_board{
+    width: 70px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: -100px;
+    padding: 40px 0px 20px 30px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+    opacity:1;
+    z-index:100;
+}
+
+#education_senior_school_marks{
+	width: 70px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: -100px;
+    padding: 40px 0px 20px 30px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+    opacity:1;
+ }
+ 
+#education_junior_school_label{
+	width: 60px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 40px 0px 20px 40px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+    opacity:1;
+    z-index:200;
+ }
+
+#education_junior_school_board{
+	width: 70px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: -100px;
+    padding: 40px 0px 20px 30px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+    opacity:1;
+    z-index:100;
+ }
+ 
+#education_junior_school_marks{
+	width: 70px;
+    height: 40px;
+    margin-left: 100px;
+    margin-top: -100px;
+    padding: 40px 0px 20px 30px;
+    box-shadow: 2px 2px 5px;
+    font-weight:bold;
+ }
+ 
+#email_me1_container{
+	font-family:"Serif" ;
+}
+
+#email_me_field_message{
+	/*font-size: 14px;
+    margin: 5px;
+    /*border: none;*/
+    overflow: hidden;
+    resize: none;
+    /*background-color: grey; */
+}
+
+#email_me_heading{
+	margin-left:60px;
+}
+
+#instructions{
+	color:white;
+	margin-left:540px;
+	font-family:"Serif";
+}
+
+#email_me_form_fields_container{
+margin-left: 60px;
+margin-top:20px;
+}
+
+#email_me_field_name,#email_me_field_email, #email_me_field_message{
+    border-radius:2px;
+    padding:6px 6px 6px 6px;
+    border:1px solid grey;
+    font-size:16px;
+    font-family:"Sans-Serif";
+    margin-top:15px;
+}
+
+#email_me_button_submit{	
+	margin:20px auto 0px auto;
+	width:100px;
+	border-radius:3px;
+	padding:10px 5px 10px 5px;
+	font-size:16px;
+    font-family:"Sans-Serif";
+    cursor:pointer;
+    border:none;
+    box-shadow:2px 2px 4px grey;
+}
+
+#email_me_button_submit:hover{
+	background-color:#9999ff;
+}
+
+#email_me_field_name_error_div,#email_me_field_email_error_div {
+	margin-top:-20px;
+	font-size:10px;
+	font-family:"Sans-Serif";
+	color:red;
+	height:11px;
+
+}
+#email_me_field_message_error_div{
+	font-size:10px;
+	font-family:"Sans-Serif";
+	color:red;
+	height:11px;
+}
+
+#rolling_svg{
+	position:absolute;
+	background:none !important;
+	margin-top:200px;
+	margin-left:200px;
+	width:100px;
+	height:100px;
+	display:none;
+}
+
+#email_sent_status_text{
+    width:498px;
+    height:498px;
+    text-align:center;
+    position:absolute;
+    /*line-height:498px;*/
+	display: flex;
+	justify-content: center; /* align horizontal */
+	align-items: center; /*align-vertical*/
+	font-size:24px;
+	font-weight:bold;
+	font-family:Sans-Serif;
+	padding:10px 10px 10px 10px;
+	line-height:120%;
+}
+
